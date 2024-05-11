@@ -34,7 +34,7 @@ async def cb_handler(client, query: CallbackQuery):
                 [InlineKeyboardButton('🔊 Updates', url='https://t.me/masalas_universe'),
                 InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/masala_supports')],
                 [InlineKeyboardButton('❤️‍🩹 About', callback_data='about'),
-                InlineKeyboardButton('🛠️ Help', callback_data='help')]
+                InlineKeyboardButton('🛠️ Help', callback_data='help')],
                 [InlineKeyboardButton("👨‍💻 Developer", url='https://t.me/AshutoshGoswami24')]
             ])
         )
