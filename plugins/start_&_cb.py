@@ -11,11 +11,10 @@ async def start(client, message):
     user = message.from_user
     await AshutoshGoswami24.add_user(client, message)                
     button = InlineKeyboardMarkup([
-        [InlineKeyboardButton('🔊 Updates', url='https://t.me/PandaWep'),
-        InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/PandaWepChat')],
+        [InlineKeyboardButton('🔊 Updates', url='https://t.me/masalas_universe'),
+        InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/masala_supports')],
         [InlineKeyboardButton('❤️‍🩹 About', callback_data='about'),
-        InlineKeyboardButton('🛠️ Help', callback_data='help')],
-        [InlineKeyboardButton("👨‍💻 Developer", url='https://t.me/AshutoshGoswami24')]
+        [InlineKeyboardButton('🛠️ Help', callback_data='help')]
     ])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
@@ -34,8 +33,8 @@ async def cb_handler(client, query: CallbackQuery):
                 [InlineKeyboardButton('🔊 Updates', url='https://t.me/PandaWep'),
                 InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/PandaWepChat')],
                 [InlineKeyboardButton('❤️‍🩹 About', callback_data='about'),
-                InlineKeyboardButton('🛠️ Help', callback_data='help')],
-                [InlineKeyboardButton("👨‍💻 Developer", url='https://t.me/AshutoshGoswami24')]
+                [InlineKeyboardButton('🛠️ Help', callback_data='help')]
+                
             ])
         )
     elif data == "help":
