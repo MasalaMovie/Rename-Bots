@@ -30,8 +30,8 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([
-                [InlineKeyboardButton('🔊 Updates', url='https://t.me/PandaWep'),
-                InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/PandaWepChat')],
+                [InlineKeyboardButton('🔊 Updates', url='https://t.me/masalas_universe'),
+                InlineKeyboardButton('♻️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/masala_supports')],
                 [InlineKeyboardButton('❤️‍🩹 About', callback_data='about'),
                 [InlineKeyboardButton('🛠️ Help', callback_data='help')]
                 
@@ -52,7 +52,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.ABOUT_TXT.format(client.mention),
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🤖 More Bots", url="https://t.me/PandaWep/7")],
+                [InlineKeyboardButton("🤖 More Bots", url="https://t.me/masalas_universe")],
                 [InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")]
             ])            
@@ -74,7 +74,7 @@ async def cb_handler(client, query: CallbackQuery):
 async def donate(client, message):
 	text = Txt.DONATE_TXT
 	keybord = InlineKeyboardMarkup([
-        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/PandaWep"), 
+        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/MalsalaAdmin"), 
         			InlineKeyboardButton("✖️ Close",callback_data = "close") ]])
 	await message.reply_text(text = text,reply_markup = keybord)
 
